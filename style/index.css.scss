@@ -1,0 +1,263 @@
+@import './site.css.scss';
+
+body {
+  margin: 0;
+  background-color: $dark-color;
+}
+
+$transition-delay: 0.2s;
+$transition-time: 0.5s;
+
+#header_bar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background-color: $dark-color;
+  color: $light-color;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+
+  a {
+    text-decoration: none;
+  }
+
+  header {
+    padding: 20px;
+    transition: padding $transition-time $transition-delay;
+  }
+
+  #avatar_title {
+    float: left;
+
+    h1 {
+      margin: 0;
+      transition: font-size $transition-time $transition-delay;
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      border: 3px solid;
+      vertical-align: middle;
+      margin-right: 40px;
+
+      transition-property: width, height, margin-right;
+      transition-duration: $transition-time;
+      transition-delay: $transition-delay;
+    }
+  }
+
+  #social_links {
+    position: absolute;
+    right: 20px;
+    transition: right $transition-time $transition-delay;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 20px;
+
+      transition: margin-left $transition-time $transition-delay;
+    }
+
+    svg.logo {
+      width: 40px;
+      height: 40px;
+
+      transition: color 0.4s, width $transition-time $transition-delay, height $transition-time $transition-delay;
+
+      &:not(:hover) {
+        color: $medium-gray !important;
+      }
+    }
+  }
+
+  header::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  #nav_links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 4px;
+
+    transition: padding-right $transition-time $transition-delay;
+
+    a {
+      font-family: $heading-font;
+      margin-left: 20px;
+      border-bottom: 4px solid transparent;
+      padding-bottom: 4px;
+      transition: font-size $transition-time $transition-delay;
+
+      i.material-icons {
+        margin-right: 4px;
+        transition: font-size $transition-time $transition-delay;
+      }
+
+      &.current {
+        border-bottom-color: $medium-gray;
+        cursor: default;
+      }
+
+      &:hover {
+        border-bottom-color: $light-color;
+        transition: border-bottom-color 0.4s;
+      }
+
+      * {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@mixin compact-header {
+  #header_bar {
+    header {
+      padding: 10px;
+    }
+
+    #avatar_title {
+      h1 {
+        font-size: 25px;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+        margin-right: 14px;
+      }
+    }
+
+    #nav_links {
+      padding-right: 10px;
+    }
+
+    #social_links {
+      right: 10px;
+
+      a {
+        margin-left: 10px;
+        font-size: 10px;
+
+        i.material-icons {
+          font-size: 18px;
+        }
+      }
+
+      svg.logo {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+html:not([data-scroll='0']) {
+  @include compact-header;
+}
+
+@media screen and (max-width: 700px) {
+  @include compact-header;
+
+  #header_bar {
+    #nav_links {
+      a {
+        font-size: 10px;
+
+        i.material-icons {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  @for $index from 1 through 6 {
+    h#{$index}{
+      text-align: center;
+      @if $index == 1 {
+        text-transform: uppercase;
+      } @else {
+        font-variant: small-caps;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.2em;
+
+    width: calc(100% - 80px);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article > div {
+    padding-top: 220px;
+    padding-bottom: 40px;
+  }
+
+  article section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  article > div, section {
+    &.light-background-section {
+      background-color: $light-color;
+    }
+
+    &.dark-background-section {
+      color: $light-color;
+
+    }
+
+    &.image-background-section, &.video-background-section {
+      position: relative;
+
+      &::before {
+        content: ' ';
+        background-color: $dark-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(1px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+      }
+    }
+
+    &.image-background-section::after {
+      content: ' ';
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    &.video-background-section {
+      video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        min-width: 100%;
+      }
+    }
+  }
+}

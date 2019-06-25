@@ -1,0 +1,29 @@
+$heading-font: Menlo, "Lucida Console", monospace;
+$body-font: Georgia, serif;
+
+$dark-color: #24323e;
+$light-color: #f0ede4;
+$medium-gray: #bbbbbb;
+
+a {
+  color: inherit;
+}
+
+@for $index from 1 through 6 {
+  h#{$index}{
+    font-family: $heading-font;
+  }
+}
+
+main {
+  color: $dark-color;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-family: $body-font;
+  letter-spacing: 0.02em;
+}

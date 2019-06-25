@@ -1,0 +1,79 @@
+title: Paul Wheeler
+socialLinks:
+  - linkUrl: https://github.com/sflanker
+    linkTitle: 'GitHub'
+    linkId: github_link
+    logoUrl: ./images/GitHub.svg
+    logoViewBox: 0 0 160 156
+    hoverColor: white
+  - linkUrl: https://www.linkedin.com/in/paulwh/
+    linkTitle: LinkedIn
+    linkId: linkedin_link
+    logoUrl: ./images/LinkedIn.svg
+    logoViewBox: 0 0 76 76
+    hoverColor: '#0a65c2'
+  - linkUrl: https://stackoverflow.com/users/229247/paul-wheeler?tab=profile
+    linkTitle: StackOverflow
+    linkId: stackoverflow_link
+    logoUrl: ./images/StackOverflow.svg
+    logoViewBox: 0 0 73 86
+    hoverColor: '#f48023'
+  - linkUrl: https://www.facebook.com/sflanker
+    linkTitle: Facebook
+    linkId: facebook_link
+    logoUrl: ./images/Facebook.svg
+    logoViewBox: 0 0 100 100
+    hoverColor: '#1877f2'
+  - linkUrl: https://www.strava.com/athletes/23811097
+    linkTitle: Strava
+    linkId: strava_link
+    logoUrl: ./images/Strava.svg
+    logoViewBox: 0 0 65 90
+    hoverColor: '#fc4c02'
+navLinks:
+  - linkUrl: ./
+    linkText: Home
+    linkIcon: home
+    current: true
+  - linkUrl: ./resume.html
+    linkText: Résumé
+    linkIcon: description
+  - linkUrl: https://www.linkedin.com/messaging/compose/?recipient=paulwh
+    linkText: Contact
+    linkTitle: via LinkedIn
+    linkIcon: email
+articles:
+  - title: Never Stop Learning
+    id: intro
+    isImageBackground: true
+    backgroundImage: ./images/coding.jpg
+    backgroundImagePreview: ./images/coding_preview.jpg
+    backgroundImageOffset: 35%;
+    class: dark-background-section
+    content: <p>Welcome to my little corner of the metaverse. This site exists as a point of reference to tell you a little bit about myself.</p>
+    sections:
+      - title: Software Engineer
+        id: occupation
+        class: light-background-section
+        content: <p>I write code, design systems, invent solutions, and lead teams for a living; but also as a passion. I love the power of technology and using it to empower others. I've been writing software ever since I was introduced to Visual Basic in middle school (1990s). For more about my career, check out my <a href="https://www.linkedin.com/in/paulwh/">LinkedIn Profile</a>.</p>
+      - title: Sailor
+        id: sailing
+        class: dark-background-section
+        isVideoBackground: true
+        backgroundVideo: ./images/sailing_video.mp4
+        backgroundVideoPreview: ./images/sailing_video_preview.jpg
+        backgroundVideoFilter: brightness(0.5)
+        content: <p>I have been fortunate enough to take a couple of time-outs from my career to sail my 38 foot Hans Christian sloop to various destinations throughout the Pacific Ocean. Sailing from California to Mexico, Hawaii, and French Polynesia were some of the most amazing experiences of my life. On top of that, keeping the ship and her crew sailing smoothly was an exciting challenge from which I learned much. For more about my adventures, have a look at my blog <a href="http://fetchthehorizon.com/">Fetch the Horizon</a>.</p>
+      - title: Brewer
+        id: brewing
+        class: light-background-section
+        content: '<p><img src="./images/HIP_Fermenters_logo.png" width="160" height="152" style="float: right; margin-left: 10px" alt="HIP Fermenters Logo" /> Given my passion for creativity coupled with engineering, it is little surprise that brewing beer proved to be right up my alley. I enjoy creating my own recipes, sticking mostly to traditional ingredients, and iterating on almost any style until I feel like I''ve produced a quality result. Since moving to Hawaii, it has been great to discover an active group of brewers, and I''m now involved with organizing our local homebrew club, <a href="https://www.facebook.com/groups/HIPFermenters/">HIP Fermenters</a>.</p>'
+      - title: Cyclist
+        id: cycling
+        class: dark-background-section
+        isImageBackground: true
+        backgroundImage: ./images/cycling.jpg
+        backgroundImagePreview: ./images/cycling_preview.jpg
+        backgroundImageOffset: 25%
+        backgroundImageFilter: brightness(0.4) contrast(0.9) sepia(0.6) hue-rotate(40deg)
+        content: <p>Physical activity and outdoor adventure has always been a big draw for me, but as of late I have really gotten in to road cycling. Since 2017 I've gone from having limited road cycling experience, to riding 100+ miles on a weekly basis, racing competitively, and participating as a volunteer and organizer to foster bicycle racing in Hawaii including being on the board of the Aloha State Bicycle Racing Association. I race and ride with <a href="http://www.outtaboundshawaii.com/">Outta Bounds Hawaii Cycling Team</a>.</p>

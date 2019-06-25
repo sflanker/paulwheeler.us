@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="./style/index.css" rel="stylesheet" />
+  <style type="text/css">
+    {{#traverse articles children="sections"}}
+      {{#if isImageBackground}}
+        #{{id}}::before {
+          background-image: url({{& backgroundImagePreview}});
+          {{#if backgroundImageOffset}}background-position-y: {{ backgroundImageOffset }};{{/if}}
+          {{#if backgroundImageFilter}}filter: {{ backgroundImageFilter }};{{/if}}
+        }
+        #{{id}}::after {
+          background-image: url({{& backgroundImage}});
+          {{#if backgroundImageOffset}}background-position-y: {{ backgroundImageOffset }};{{/if}}
+          {{#if backgroundImageFilter}}filter: {{ backgroundImageFilter }};{{/if}}
+        }
+      {{else if isVideoBackground}}
+        #{{id}}::before {
+          background-image: url({{& backgroundVideoPreview}});
+          {{#if backgroundVideoOffset}}background-position-y: {{ backgroundVideoOffset }};{{/if}}
+          {{#if backgroundVideoFilter}}filter: {{ backgroundVideoFilter }};{{/if}}
+        }
+
+        #{{id}} video {
+          {{#if backgroundVideoFilter}}filter: {{ backgroundVideoFilter }};{{/if}}
+        }
+      {{/if}}
+    {{/traverse}}
+  </style>
+</head>
+<body onscroll="document.documentElement.dataset.scroll = (window.scrollY &gt;&gt; 6).toString();">
+  <div id="header_bar">
+    <header>
+      <div id="avatar_title">
+        <h1>
+          <img src="./images/avatar.jpg" alt="Avatar" width="209" height="209" />
+          {{title}}
+        </h1>
+      </div>
+      <div id="social_links">
+        {{#each socialLinks}}
+        <a id="{{linkId}}" href="{{& linkUrl}}" title="{{linkTitle}}">
+          <svg class="logo" viewBox="{{logoViewBox}}" style="color: {{hoverColor}}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="{{& logoUrl}}#logo"></use>
+          </svg>
+        </a>
+        {{/each}}
+      </div>
+    </header>
+    <nav>
+      <div id="nav_links">
+        {{#each navLinks}}
+          <a href="{{& linkUrl}}" title="{{linkTitle}}" {{#current}}class="current"{{/current}}>
+            <i class="material-icons">{{linkIcon}}</i><span>{{linkText}}</span>
+          </a>
+        {{/each}}
+      </div>
+    </nav>
+  </div>
+  <main>
+    {{#each articles}}
+    <article>
+      <div id="{{id}}" class="{{class}} {{#if isImageBackground}}image-background-section{{/if}} {{#if isVideoBackground}}video-background-section{{/if}}">
+        <h1>{{title}}</h1>
+        {{{content}}}
+      </div>
+      {{#each sections}}
+        <section id="{{id}}" class="{{class}} {{#if isImageBackground}}image-background-section{{/if}} {{#if isVideoBackground}}video-background-section{{/if}}">
+          <h2>{{title}}</h2>
+          {{{content}}}
+          {{#if isVideoBackground}}
+            <video id="{{id}}_video" autoplay muted loop>
+              <source src="{{& backgroundVideo}}" type="video/mp4">
+            </video>
+          {{/if}}
+        </section>
+      {{/each}}
+    </article>
+    {{/each}}
+  </main>
+</body>
+</html>
