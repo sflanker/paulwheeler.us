@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="0 0 400 400"
+   height="400"
+   width="400">
+  <ellipse
+     ry="118.492"
+     rx="114.210"
+     cy="159.887"
+     cx="200"
+     style="fill:#013e60;stroke:#ffffff;stroke-width:3" />
+  <path
+     d="M 157.445,103.113 130.494,227.736 130.822,21.237 Z"
+     style="fill:#4b6e81;stroke:#ffffff;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:10" />
+  <path
+     d="m 157.445,103.113 64.865,271.739 0.136,-146.667 -91.624,-206.948 z"
+     style="fill:#3da7a7;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10" />
+  <path
+     d="M 222.447,228.185 273.961,103.278 222.310,374.852 Z"
+     style="fill:#4b6e81;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10" />
+</svg>

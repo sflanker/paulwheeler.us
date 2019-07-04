@@ -2,9 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link href="./images/favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="./images/favicon.png" rel="icon" type="image/png" />
+  <link href="./style/resume.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
-
+<input id="lod_slider" type="range" min="0" max="2" value="1" onchange="this.setAttribute('value', this.value);" onmousemove="this.setAttribute('value', this.value);" />
+<label for="lod_slider">Detail:</label>
+<main>
+<div class="hresume">
+  <h1>{{contact.firstName}} {{contact.lastName}}</h1>
+  {{#with contact}}
+  <section id="section_contact" class="contact vcard">
+    <h2>Contact</h2>
+    <h4 id="me" class="fn n removed"><span class="given-name">{{firstName}}</span> <span class="family-name">{{lastName}}</span></h4>
+    <ul>
+      <div>
+      <li class="tel"><a href="tel:+1-{{ $strip phone '() -'}}">{{phone}}</a></li>
+      <li><a href="mailto:{{& email}}" class="email">{{{emailDisplay}}}</a></li>
+      {{#with address}}
+      <li>
+        <address>
+          <span class="street-address nowrap">{{street}}</span>
+          <span class="city-state-code nowrap">
+          <span class="locality">{{city}}</span>, {{ $abbr state "region"}} <span class="postal-code">{{postalCode}}</span></span>
+        </address>
+      </li>
+      {{/with}}
+      </div>
+    </ul>
+  </section>
+  {{/with}}
+  <section id="section_summary" class="summary">
+    <h2>Summary</h2>
+    <p>
+      {{{summary}}}
+    </p>
+  </section>
+  {{#with education}}
+  <section id="section_education" class="vcalendar">
+    <h2>Education</h2>
+    <div class="education vevent">
+      <p>
+        Earned a <span class="summary">{{ $abbr degree}} in {{major}} at <a href="{{schoolUrl}}" class="org url">{{school}}</a></span> in <span class="loc">{{location}}</span> from <span class="dtstart value-title" title="{{startDate}}">{{ $formatDate startDate "YYYY"}}</span> to <span class="dtend value-title" title="{{endDate}}">{{ $formatDate endDate "YYYY"}}</span>.
+      </p>
+      <dl class="description lod1">
+        <div><dt>Graduated</dt><dd>{{ $formatDate endDate "MMM YYYY"}}</dd></div>
+        <div><dt>Major</dt><dd>{{major}}</dd></div>
+        <div><dt>Minor</dt><dd>{{minor}}</dd></div>
+        <div><dt>Classes</dt><dd>{{classes}}</dd></div>
+      </dl>
+    </div>
+  </section>
+  {{/with}}
+  <section id="section_skills">
+    <h2>Skills</h2>
+    <ul>
+      {{#each skills as |skillList skillType|}}
+        <li class="area {{ $lower skillType}}_skills">{{skillType}}
+          <ul>
+            {{#each skillList}}
+              <li>
+                <a href="{{& this.url}}" class="skill skill_rank{{rank}}" rel="tag" {{#if details}}title="{{details}}"{{/if}}>
+                  <span>{{@key}}</span>
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+  <section id="section_experience" class="vcalendar">
+    <h2>Experience</h2>
+    <ul>
+      {{#each experience}}
+        <li class="experience vevent {{#if lowImportance}}lod2{{else if moderateImportance}}lod1{{/if}}">
+          <div class="summary">
+            <h4><span class="attendee"><a href="#me" class="include vcard" title="{{contact.firstName}} {{contact.lastName}}"></a><span class="role">{{title}}</span></span> @ <span class="organizer vcard">{{#if companyUrl}}<a href="{{companyUrl}}" class="url org">{{ $abbr company}}</a>{{else}}<span class="org">{{ $abbr company}}</span>{{/if}}</span></h4>
+            {{#if-any logoUrl imageUrl}}
+              <img src="{{& value}}" width="100" height="100" alt="{{company}}" class="lod1 {{#if logoUrl}}company-logo{{else}}company-image{{/if}}" />
+            {{/if-any}}
+          </div>
+          <ul class="details">
+            <li class="location">{{{location}}}</li>
+            <li>
+              <abbr class="dtstart value-title" title="{{startDate}}">{{ $formatDate startDate "MMM YYYY"}}</abbr> to {{#if endDate}}<abbr class="dtend value-title" title="{{endDate}}">{{ $formatDate endDate "MMM YYYY"}}</abbr>{{else}}<span>present</span>{{/if}}
+            </li>
+          </ul>
+          <div class="description">
+            <p class="expository {{#if accomplishments}}lod2{{/if}}">{{{description}}}</p>
+            {{#if accomplishments}}
+              <div class="accomplishments">
+                <h5>Accomplishments</h5>
+                <ul>
+                  {{#each accomplishments}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+  <section id="section_publications" class="lod2">
+    <h2>Publications</h2>
+    {{#each publications}}
+      <div class="publication">
+        <p><cite><span class="publication_authors">{{authors}}.</span> <span class="publication_title">"{{title}}."</span> <span class="publication_source">{{publication}}.</span></cite></p>
+        {{#if description}}
+          <p class="details">{{description}}</p>
+        {{/if}}
+      </div>
+    {{/each}}
+  </section>
+</div>
+</main>
+<footer>
+  <section class="footnotes">
+    <ul>
+      <li>
+        This content uses the <a rel="profile" href="http://microformats.org/profile/hresume">hResume</a>, <a
+        rel="profile" href="http://microformats.org/profile/hcard">hCard</a>, and <a rel="profile"
+                                                                                     href="http://microformats.org/profile/hcalendar">hCalendar</a>
+        <a href="http://microformats.org/">microformats.</a>
+      </li>
+    </ul>
+  </section>
+</footer>
 </body>
 </html>

@@ -211,6 +211,8 @@ main {
   }
 
   article > div, section {
+    overflow: hidden;
+
     &.light-background-section {
       background-color: $light-color;
     }

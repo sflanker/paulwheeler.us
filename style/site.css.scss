@@ -5,8 +5,13 @@ $dark-color: #24323e;
 $light-color: #f0ede4;
 $medium-gray: #bbbbbb;
 
-a {
-  color: inherit;
+body {
+  font-family: $body-font;
+  letter-spacing: 0.02em;
+}
+
+main {
+  color: $dark-color;
 }
 
 @for $index from 1 through 6 {
@@ -15,15 +20,26 @@ a {
   }
 }
 
-main {
-  color: $dark-color;
-}
-
 h1 {
   font-size: 2em;
 }
 
-p {
+h4, h5, h6 {
   font-family: $body-font;
-  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: initial;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.removed {
+  display: none;
 }

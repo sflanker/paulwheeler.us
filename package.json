@@ -1,0 +1,28 @@
+{
+  "name": "paulwheeler.us",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sflanker/paulwheeler.us.git"
+  },
+  "keywords": [
+    "Eleventy",
+    "11ty",
+    "webpage"
+  ],
+  "author": "Paul Wheeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sflanker/paulwheeler.us/issues"
+  },
+  "homepage": "http://www.paulwheeler.us/",
+  "dependencies": {
+    "handlebars": "^4.1.2",
+    "moment": "^2.24.0"
+  }
+}

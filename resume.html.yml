@@ -1,0 +1,223 @@
+title: Paul Wheeler - Résumé
+contact:
+  firstName: Paul
+  lastName: Wheeler
+  phone: '(206) 669-6428'
+  email: sflanker+resume@hotmail.com
+  emailDisplay: '<img src="./images/email.png" height="16" width="163" />'
+  address:
+    street: 2341 Kaola Way
+    city: Honolulu
+    state: { text: Hawaii, abbreviation: HI }
+    postalCode: 96813
+summary: "I am a Senior Software Engineer/Technical Lead with experience designing and implementing applications <strong>from the database to the front end</strong>. I have <strong>deep knowledge of the Microsoft platform</strong>, especially C#, ASP.Net Core, Linq, WCF, and SQL; with additional experience in Java, Hadoop, Javascript, and Haskell. I have a <strong>passion for technology</strong> and solving real world problems. I strive to maintain a technical focus, but I also have experience managing a team of developers, and I have a keen awareness of team dynamics as well as what it takes to make a group of engineers cohesive and successful."
+education:
+  school: "Rochester Institute of Technology"
+  schoolUrl: http://www.rit.edu/
+  location: Rochester, NY
+  degree: { text: Bachelor of Science, abbreviation: BS }
+  major: Computer Science
+  minor: Philosophy
+  classes: "Genetic Algorithms, Artificial Intelligence, Computer Graphics, 3d Computer Animation, Operating System Design"
+  startDate: 2001-09
+  endDate: 2005-05
+skills:
+  Languages:
+    JavaScript:
+      url: https://en.wikipedia.org/wiki/JavaScript
+      rank: 4
+      details: (ECMA/Typescript/Node.js)
+    'C#':
+      url: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+      rank: 5
+    'ASP.Net':
+      url: https://en.wikipedia.org/wiki/ASP.NET
+      rank: 5
+      detail: (2.0/MVC/Core)
+    Clojure:
+      url: https://en.wikipedia.org/wiki/Clojure
+      rank: 3
+    SQL:
+      url: https://en.wikipedia.org/wiki/Transact-SQL
+      rank: 5
+      detail: (Microsft/MySql/Postgres)
+    Haskell:
+      url: https://en.wikipedia.org/wiki/Haskell_(programming_language)
+      rank: 3
+    Python:
+      url: https://en.wikipedia.org/wiki/Python_(programming_language)
+      rank: 1
+    Scala:
+      url: https://en.wikipedia.org/wiki/Scala_(programming_language)
+      rank: 2
+    'C/C++':
+      url: https://en.wikipedia.org/wiki/C++
+      rank: 2
+    Java:
+      url: https://en.wikipedia.org/wiki/Java_(programming_language)
+      rank: 4
+    'VB.Net':
+      url: https://en.wikipedia.org/wiki/Visual_Basic_.NET
+      rank: 1
+  General:
+    Cloud:
+      url: https://en.wikipedia.org/wiki/Cloud_computing
+      rank: 4
+      details: (AWS/GCP)
+    Kubernetes:
+      url: https://en.wikipedia.org/wiki/Kubernetes
+      rank: 3
+      details: (GKE/KNative)
+    Web Design:
+      url: https://en.wikipedia.org/wiki/Web_design
+      rank: 5
+      details: (HTML/CSS/SVG/Canvas)
+    Docker:
+      url: https://en.wikipedia.org/wiki/Docker_(software)
+      rank: 2
+    Linq:
+      url: https://en.wikipedia.org/wiki/Language_Integrated_Query
+      rank: 4
+      details: (Language Integrated Query)
+    XML:
+      url: https://en.wikipedia.org/wiki/XML
+      rank: 4
+      details: (XPATH/XSLT/XSD/SOAP)
+    Continuous Integration:
+      url: https://en.wikipedia.org/wiki/Continuous_integration
+      rank: 3
+      details: (Testing/Continuous Deployment)
+    Distributed Computing:
+      url: https://en.wikipedia.org/wiki/Distributed_computing
+      rank: 4
+      details: (Hadoop/Spark/Pub-Sub)
+    ReactJS:
+      url: https://en.wikipedia.org/wiki/React_(JavaScript_library)
+      rank: 1
+    Web Services:
+      url: https://en.wikipedia.org/wiki/Web_service
+      rank: 5
+      details: (REST/SOAP/WCF)
+    SCRUM/Agile:
+      url: https://en.wikipedia.org/wiki/Agile_software_development
+      rank: 1
+experience:
+  - company: Invio
+    companyUrl: https://invioinc.com/
+    logoUrl: ./images/invio_logo.svg
+    title: Senior Software Engineer
+    location: Honolulu, <abbr title="Hawaii">HI</abbr>
+    startDate: 2017-09
+    description: "Invio is a early stage startup focused on bringing automation and technological solutions to FDA regulated clinical trial operations. The company's focus is on improving efficiency, reducing costs, decreasing time to market, and ensuring quality. Years before a joined Invio I had the opportunity to work with the founders at a Startup Weekend event on a precursor project that laid the groundwork for what eventually became Invio."
+    accomplishments:
+      - Developed front end features including Document Redaction and Annotation UI.
+      - Designed and implemented backend API capabilities.
+      - Created 3rd party API for ingesting medical device data.
+  - company: Amperity
+    companyUrl: https://amperity.com/
+    logoUrl: ./images/amperity_logo.svg
+    title: Principle Engineer
+    location: Honolulu, <abbr title="Hawaii">HI</abbr>
+    startDate: 2017-01
+    endDate: 2017-08
+    description: "Amperity is a fast growing startup that is revolutionizing the way consumer brands manage their data with advanced, big data matching and de-duplication techniques. Amperity was a great place to work and a learned a lot during my time there, however when the opportunity at Invio became available I couldn't pass up the chance to rejoin that team."
+    accomplishments:
+      - "Lead a team tasked with overhauling Amperity's data ingestion pipeline to improve configurability, reliability, and performance."
+      - "Defined data ingestion system architecture, defined and prioritized project backlog,  oversaw and mentored multiple developers."
+  - company: S/V Serenity
+    companyUrl: https://www.facebook.com/fetchthehorizon
+    imageUrl: ./images/serenity.jpg
+    title: Skipper
+    moderateImportance: true
+    location: The Pacific Ocean
+    startDate: 2016-03
+    endDate: 2016-12
+    description: "After performing another round of upgrades on Serenity, we sailed from California, to the Island of Hawaii, to French Polynesia, to Oahu. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
+  - company: IMS Health (Appature)
+    logoUrl: ./images/appature_logo.svg
+    title: Senior Software Engineer
+    location: Seattle, <abbr title="Washington">WA</abbr>
+    startDate: 2013-02
+    endDate: 2016-02
+    description: "Appature was a Marketing Automation and Customer Relationship Management system targeted specifically at the life sciences and pharmaceutical industry. We tackled challenges bringing messy, high volume data sets into a system where quality and predictability were essential."
+    accomplishments:
+      - "Redesigned internal data access patterns to simplify code, increase encapsulation of data-specific functionality, and decrease coupling to the database layer."
+      - "Built a new version of the Appature Nexus API for loading data. Significantly increase performance."
+      - "Redesigned query engine to increase expressiveness, simplify optimization process, and improve code maintainability."
+  - company: Alpha Heavy Industries
+    title: Senior Software Engineer
+    location: San Francisco, <abbr title="California">CA</abbr>
+    startDate: 2011-07
+    endDate: 2012-12
+    description: "Alpha Heavy Industries was founded by some of my coworkers at a previous startup, Positronic, to expand upon our application of internet text mining and natural language processing to financial market analysis. We applied advanced genetic programming and solver techniques to identify signal in high frequency financial market data."
+    accomplishments:
+      - "Designed and implemented data processing, market simulation, backtesting, and fitness function algorithms for trading strategy evolution."
+      - "Designed and ran experiments to improve strategy evolution platforms."
+      - "Made improvements to machine learning components."
+  - company: S/V Serenity
+    companyUrl: https://www.facebook.com/fetchthehorizon
+    imageUrl: ./images/serenity.jpg
+    title: Skipper
+    moderateImportance: true
+    location: The Pacific Ocean
+    startDate: 2010-10
+    endDate: 2011-07
+    description: "Having bought Serenity, a Hans Christian 38 Traditional Cutter, we refitted her and sailed from Berkeley, CA to La Paz, Mexico and back. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
+  - company: eBay
+    logoUrl: ./images/ebay_logo.svg
+    title: Senior Software Engineer
+    location: San Jose, <abbr title="California">CA</abbr>
+    startDate: 2009-01
+    endDate: 2010-02
+    description: "In late 2008 eBay acquired Positronic in order to \"[leverage] machine learning to provide a more predictive and compelling customer experience.\"<a href=\"https://xconomy.com/seattle/2009/01/13/positronic-purchased-by-ebay-ex-microsoft-execs-moving-to-silicon-valley/\" class=\"citation\" title=\"Gregory T. Huang. 'Positronic Purchased by eBay, Ex-Microsoft Execs Moving to Silicon Valley'. Xconomy.com, January 13th, 2009\"><i class=\"material-icons\">launch</i></a>"
+    accomplishments:
+      - Applied Positronic tools to eBay’s search system in order to tune the ranking algorithm.
+      - Created Hadoop jobs to processes click logs to generate a data set for machine learning.
+      - Was influential in the creation of a Hadoop installation that became an integral part of eBay’s infrastructure.
+  - company: Positronic
+    logoUrl: ./images/positronic_logo.svg
+    title: Software Engineer
+    location: Seattle, <abbr title="Washington">WA</abbr>
+    startDate: 2007-11
+    endDate: 2008-12
+    description: "Positronic was an early stage startup when I joined it as the fourth member of the team, and second full time engineer. Positronic's mission was to push the limits of what data science and machine learning could be applied to. Our initial target was financial markets and internet text mining."
+    accomplishments:
+      - Architected, designed, and implemented a unique .Net based distributed computing architecture for machine learning jobs.
+      - Implemented genetic programming algorithms for evolving trading strategies.
+      - Designed and implemented a high performance market simulator and backtester.
+  - company: Judy's Book
+    logoUrl: ./images/judys_book_logo.svg
+    companyUrl: https://www.judysbook.com/
+    lowImportance: true
+    title: SDE
+    location: Seattle, <abbr title="Washington">WA</abbr>
+    startDate: 2007-09
+    endDate: 2007-11
+    description: "After two years at Microsoft a desire to work in a more customer focused environment prompted me to move to Judy's Book, a local business review and deal site. Unfortunately my timing could have been better and Judy's Book ceased operations shortly after I started there (although technically the site is still up under different ownership). On the upside, my short time at Judy's Book got me up to speed on ASP.Net MVC."
+  - company: Microsoft
+    logoUrl: ./images/microsoft_logo.svg
+    title: SDET & SDE
+    location: Redmond, <abbr title="Washington">WA</abbr>
+    startDate: 2005-09
+    endDate: 2007-09
+    description: "At Microsoft I was part of a team that acted as an early adopter and tester for next generation web service and workflow technologies as they were being developed. We got our hands dirty with the bleeding edges of Windows Communication Foundations and Windows Workflow, provided meaningful feedback to the core product teams, and built real world applications while doing so."
+    accomplishments:
+      - Acted as Scrum Master.
+      - Developed, automated, and maintained test cases
+      - Planned, designed, and developed applications to validate the latest components of WCF and Windows Workflow.
+      - Worked with the core WCF team to expand RESTful web service capabilities.
+      - Trained peers on best practices of API and Web Service design.
+  - company: { text: United States Department of Agriculture, abbreviation: USDA }
+    companyUrl: https://www.ams.usda.gov/
+    logoUrl: ./images/USDA_logo.svg
+    lowImportance: true
+    title: Software Developer/Intern
+    location: Washington, <abbr title="District of Columbia">DC</abbr>
+    startDate: 2003-05
+    endDate: 2004-09
+    description: "During college I did two summer internships with the Livestock and Seed division of the USDA, and worked part time in-between. I worked on two major projects while at the USDA: The first was an interactive media presentation about the Livestock and Seed division, which I implemented in Macromedia Flash and Actionscript. The second was an ASP.Net web application and API to facilitate operation of the OECD Seed Certification program in the U.S.. In both cases I independently designed and implemented the project, saving the USDA significant time and expense compared to bidding out the projects with contractors."
+publications:
+  - title: Image Dithering as N-Queens Problem
+    authors: Paul Wheeler, M. Morse, V. Misic, P. Anderson
+    publication: 2004 Proceedings, Conference on Artificial Neural Networks in Engineering
+    description: "By expanding on a basic genetic algorithm for solving the N-Queens problem we were able to devlop a method for generating high quality noise masks that could be used in image dithering producing results superior to traditional algorithms. In order to produce the results for the paper I implemented the expanded genetic algorithm in both Matlab and C++."

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 400 400"
+   height="400"
+   width="400"
+   version="1.1">
+  <defs>
+    <linearGradient id="redGradient">
+      <stop offset="0" stop-color="#bc3825"/>
+      <stop offset="0.1" stop-color="#d75643"/>
+      <stop offset="0.9" stop-color="#d44e3a"/>
+      <stop offset="1" stop-color="#ae3927"/>
+    </linearGradient>
+    <linearGradient id="blueGradient">
+      <stop offset="0" stop-color="#88bbcd"/>
+      <stop offset="1" stop-color="#254192"/>
+    </linearGradient>
+    <linearGradient
+       id="blueGradientRotated"
+       xlink:href="#blueGradient"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.320,0,0,7.340,-67.940,-1692.197)"
+       y2="239"
+       x2="52"
+       y1="277"
+       x1="22" />
+    <linearGradient
+       id="redGradientRotated"
+       xlink:href="#redGradient"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.320,0,0,7.340,-67.940,-1692.197)"
+       y2="258"
+       x2="62"
+       y1="279"
+       x1="17" />
+  </defs>
+  <path
+     id="path884"
+     d="m 74.359,364.298 c -0.732,-9.455 -0.747,-21.839 0.016,-37.582 5.474,-111.064 50.687,-132.257 166.426,-118.788 63.889,7.436 78.013,3.734 107.518,-53.501 9.397,-18.232 13.408,-29.547 10.989,-35.276 -3.318,-7.851 -25.948,-11.976 -56.027,2.409 -0.525,64.249 -22.264,83.032 -64.438,77.535 C 48.975,174.334 30.761,192.088 42.959,303.152 c 3.397,30.991 8.760,49.001 15.604,57.163 4.631,5.529 10.416,7.588 15.787,3.973 z"
+     style="fill:url(#redGradientRotated)" />
+  <path
+     id="path886"
+     d="m 58.444,360.196 c 4.758,5.489 10.575,7.588 15.914,4.101 C 94.149,351.411 147.367,236.732 187.066,169.179 244.518,71.401 303.640,-14.097 317.494,16.200 L 359.294,119.157 c -3.294,-7.883 -26.760,-11.458 -56.083,2.553 -30.770,14.705 -61.295,52.679 -93.315,87.900 -77.400,85.147 -115.619,202.044 -129.831,176.925 z"
+     style="fill:url(#blueGradientRotated)" />
+</svg>
