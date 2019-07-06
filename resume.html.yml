@@ -12,7 +12,7 @@ contact:
     city: Honolulu
     state: { text: Hawaii, abbreviation: HI }
     postalCode: 96813
-summary: "I am a Senior Software Engineer/Technical Lead with experience designing and implementing applications <strong>from the database to the front end</strong>. I have <strong>deep knowledge of the Microsoft platform</strong>, especially C#, ASP.Net Core, Linq, WCF, and SQL; with additional experience in Java, Hadoop, Javascript, and Haskell. I have a <strong>passion for technology</strong> and solving real world problems. I strive to maintain a technical focus, but I also have experience managing a team of developers, and I have a keen awareness of team dynamics as well as what it takes to make a group of engineers cohesive and successful."
+summary: "I am a Senior Software Engineer/Technical Lead with experience designing and implementing applications <strong>from the database to the front end</strong>. I have <strong>deep knowledge of the Microsoft platform</strong>, especially C#, ASP.Net Core, Linq, WCF, and SQL; with additional experience in Java, Hadoop, Javascript, and Haskell. I have a <strong>passion for technology</strong> and solving real world problems. I maintain a sharp technical focus. I also have experience managing a team of developers, which has given me a keen awareness of what it takes to make a group of engineers cohesive and successful."
 education:
   school: "Rochester Institute of Technology"
   schoolUrl: http://www.rit.edu/
@@ -20,7 +20,7 @@ education:
   degree: { text: Bachelor of Science, abbreviation: BS }
   major: Computer Science
   minor: Philosophy
-  classes: "Genetic Algorithms, Artificial Intelligence, Computer Graphics, 3d Computer Animation, Operating System Design"
+  classes: "Genetic Algorithms, Artificial Intelligence, Computer Graphics, 3D Computer Animation, Operating System Design"
   startDate: 2001-09
   endDate: 2005-05
 skills:
@@ -210,7 +210,7 @@ experience:
     description: "At Microsoft I was part of a team that acted as an early adopter and tester for next generation web service and workflow technologies as they were being developed. We got our hands dirty with the bleeding edges of Windows Communication Foundations and Windows Workflow, provided meaningful feedback to the core product teams, and built real world applications while doing so."
     accomplishments:
       - Acted as Scrum Master.
-      - Developed, automated, and maintained test cases
+      - Developed, automated, and maintained test cases.
       - Planned, designed, and developed applications to validate the latest components of WCF and Windows Workflow.
       - Worked with the core WCF team to expand RESTful web service capabilities.
       - Trained peers on best practices of API and Web Service design.

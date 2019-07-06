@@ -8,8 +8,8 @@
 
   body {
     margin: 30px 40px;
-    background-color: $light-color;
-    background-image: url('../images/paper.png');
+    background-color: #e8e8e8;
+    background-image: url('../images/brushed_steel.png');
   }
 }
 
@@ -402,7 +402,7 @@ input#lod_slider[value="0"] ~ main .skill_rank1 {
 
   #section_contact {
     ul {
-      padding-left: 0;
+      margin-left: 0;
     }
   }
 
@@ -429,6 +429,10 @@ input#lod_slider[value="0"] ~ main .skill_rank1 {
       // expand to the width of the screen
       margin-left: -5vw;
       margin-right: -5vw;
+      // Make the text line up with other elements
+      padding-left: 5vw;
+      padding-right: 5vw;
+
       border-left: none;
       border-right: none;
     }
