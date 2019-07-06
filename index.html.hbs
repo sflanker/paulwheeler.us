@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" data-scroll="0">
-<head>
+<head data-scroll="0">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{description}}" />
   <title>{{title}}</title>
   <link href="./images/favicon.svg" rel="icon" type="image/svg+xml" />
   <link href="./images/favicon.png" rel="icon" type="image/png" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="./style/index.css" rel="stylesheet" />
-  <style type="text/css">
+  <style>
     {{#traverse articles children="sections"}}
       {{#if isImageBackground}}
         #{{id}}::before {
@@ -36,22 +38,15 @@
   </style>
 </head>
 <body onscroll="document.documentElement.dataset.scroll = (window.scrollY &gt;&gt; 6).toString();">
-  <div id="header_bar">
+  <div id="header_bar" style="display: none;">
+    <input id="show_nav" type="checkbox" />
+    <label for="show_nav"><i class="material-icons"></i></label>
     <header>
       <div id="avatar_title">
         <h1>
-          <img src="./images/avatar.jpg" alt="Avatar" width="48" height="48" />
+          <img src="./images/avatar.jpg" alt="Avatar" width="140" height="140" />
           {{title}}
         </h1>
-      </div>
-      <div id="social_links">
-        {{#each socialLinks}}
-        <a id="{{linkId}}" href="{{& linkUrl}}" title="{{linkTitle}}">
-          <svg class="logo" viewBox="{{logoViewBox}}" style="color: {{hoverColor}}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <use xlink:href="{{& logoUrl}}#logo"></use>
-          </svg>
-        </a>
-        {{/each}}
       </div>
     </header>
     <nav>
@@ -62,18 +57,27 @@
           </a>
         {{/each}}
       </div>
+      <div id="social_links">
+        {{#each socialLinks}}
+          <a id="{{linkId}}" href="{{& linkUrl}}" title="{{linkTitle}}">
+            <svg class="logo" viewBox="{{logoViewBox}}" width="40" height="40" style="color: {{hoverColor}}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use xlink:href="{{& logoUrl}}#logo"></use>
+            </svg>
+          </a>
+        {{/each}}
+      </div>
     </nav>
   </div>
   <main>
     {{#each articles}}
     <article>
       <div id="{{id}}" class="{{class}} {{#if isImageBackground}}image-background-section{{/if}} {{#if isVideoBackground}}video-background-section{{/if}}">
-        <h1>{{title}}</h1>
+        <h2>{{title}}</h2>
         {{{content}}}
       </div>
       {{#each sections}}
         <section id="{{id}}" class="{{class}} {{#if isImageBackground}}image-background-section{{/if}} {{#if isVideoBackground}}video-background-section{{/if}}">
-          <h2>{{title}}</h2>
+          <h3>{{title}}</h3>
           {{{content}}}
           {{#if isVideoBackground}}
             <video id="{{id}}_video" autoplay muted loop>

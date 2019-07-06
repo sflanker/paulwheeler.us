@@ -5,8 +5,8 @@ body {
   background-color: $dark-color;
 }
 
-$transition-delay: 0.2s;
-$transition-time: 0.5s;
+$transition-delay: 0s;
+$transition-time: 0.3s;
 
 #header_bar {
   position: fixed;
@@ -30,7 +30,7 @@ $transition-time: 0.5s;
     float: left;
 
     h1 {
-      margin: 0;
+      margin: 0 60px 0 0;
       transition: font-size $transition-time $transition-delay;
     }
 
@@ -48,35 +48,18 @@ $transition-time: 0.5s;
     }
   }
 
-  #social_links {
-    position: absolute;
-    right: 20px;
-    transition: right $transition-time $transition-delay;
-
-    a {
-      text-decoration: none;
-      display: inline-block;
-      margin-left: 20px;
-
-      transition: margin-left $transition-time $transition-delay;
-    }
-
-    svg.logo {
-      width: 40px;
-      height: 40px;
-
-      transition: color 0.4s, width $transition-time $transition-delay, height $transition-time $transition-delay;
-
-      &:not(:hover) {
-        color: $medium-gray !important;
-      }
-    }
-  }
-
   header::after {
     content: '';
     clear: both;
     display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   #nav_links {
@@ -107,11 +90,53 @@ $transition-time: 0.5s;
 
       &:hover {
         border-bottom-color: $light-color;
-        transition: border-bottom-color 0.4s;
+        transition: border-bottom-color 0.2s;
       }
 
       * {
         vertical-align: middle;
+      }
+    }
+  }
+
+  #social_links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition-property: top, right;
+    transition-duration: $transition-time;
+    transition-delay: $transition-delay;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 20px;
+
+      transition: margin-left $transition-time $transition-delay;
+    }
+
+    svg.logo {
+      width: 40px;
+      height: 40px;
+
+      transition: color 0.4s, width $transition-time $transition-delay, height $transition-time $transition-delay;
+
+      &:not(:hover) {
+        color: $medium-gray !important;
+      }
+    }
+  }
+
+  #show_nav {
+    display: none;
+
+    + label {
+      position: absolute;
+      right: 0;
+      padding: 1em;
+
+      i.material-icons {
+        font-size: 24pt;
       }
     }
   }
@@ -140,6 +165,7 @@ $transition-time: 0.5s;
     }
 
     #social_links {
+      top: 10px;
       right: 10px;
 
       a {
@@ -159,31 +185,12 @@ $transition-time: 0.5s;
   }
 }
 
-html:not([data-scroll='0']) {
-  @include compact-header;
-}
-
-@media screen and (max-width: 700px) {
-  @include compact-header;
-
-  #header_bar {
-    #nav_links {
-      a {
-        font-size: 10px;
-
-        i.material-icons {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
 main {
   @for $index from 1 through 6 {
     h#{$index}{
       text-align: center;
-      @if $index == 1 {
+      margin: 0 1em;
+      @if $index <= 2 {
         text-transform: uppercase;
       } @else {
         font-variant: small-caps;
@@ -230,6 +237,7 @@ main {
         background-color: $dark-color;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-x: center;
         filter: blur(1px);
         position: absolute;
         top: 0;
@@ -244,6 +252,7 @@ main {
       content: ' ';
       background-size: cover;
       background-repeat: no-repeat;
+      background-position-x: center;
       position: absolute;
       top: 0;
       left: 0;
@@ -252,14 +261,117 @@ main {
       z-index: -1;
     }
 
-    &.video-background-section {
-      video {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        min-width: 100%;
+    &.video-background-section video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      min-width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  html:not([data-scroll='0']) {
+    @include compact-header;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include compact-header;
+
+  main p {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  #header_bar {
+    #nav_links {
+      a {
+        font-size: 10px;
+
+        i.material-icons {
+          font-size: 18px;
+        }
       }
     }
   }
+}
+
+@media screen and (min-width: 500px) {
+  #header_bar #snow_nav + label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  #header_bar {
+    #avatar_title h1 { font-size: 18px; }
+
+    nav {
+      position: relative;
+
+      #nav_links {
+        display: initial;
+        position: initial;
+
+        a {
+          display: block;
+          margin-top: 10px;
+          padding-left: 0.5em;
+          border-bottom: none;
+          border-left: 4px solid transparent;
+
+          &:hover {
+            border-left-color: $light-color;
+          }
+
+          &.current {
+            border-left-color: $medium-gray;
+            cursor: default;
+          }
+        }
+      }
+
+      #social_links {
+        position: initial;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  #show_nav:not(:checked) {
+    + label i.material-icons::after {
+      content: 'menu';
+    }
+
+    ~ header #social_links {
+      display: none;
+    }
+
+    ~ nav {
+      display: none;
+    }
+  }
+
+  #show_nav:checked {
+    + label i.material-icons::after {
+      content: 'close';
+    }
+  }
+
+  article > div, section {
+    &.video-background-section video {
+      display: none;
+    }
+  }
+}
+
+#header_bar {
+  display: initial !important;
 }

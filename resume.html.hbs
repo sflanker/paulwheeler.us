@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{description}}" />
   <title>{{title}}</title>
   <link href="./images/favicon.svg" rel="icon" type="image/svg+xml" />
   <link href="./images/favicon.png" rel="icon" type="image/png" />
@@ -14,13 +16,12 @@
 <label for="lod_slider">Detail:</label>
 <main>
 <div class="hresume">
-  <h1>{{contact.firstName}} {{contact.lastName}}</h1>
+  <h1 class="title"><a href="{{& contact.webpage}}">{{contact.firstName}} {{contact.lastName}}</a></h1>
   {{#with contact}}
   <section id="section_contact" class="contact vcard">
     <h2>Contact</h2>
     <h4 id="me" class="fn n removed"><span class="given-name">{{firstName}}</span> <span class="family-name">{{lastName}}</span></h4>
     <ul>
-      <div>
       <li class="tel"><a href="tel:+1-{{ $strip phone '() -'}}">{{phone}}</a></li>
       <li><a href="mailto:{{& email}}" class="email">{{{emailDisplay}}}</a></li>
       {{#with address}}
@@ -32,7 +33,6 @@
         </address>
       </li>
       {{/with}}
-      </div>
     </ul>
   </section>
   {{/with}}
@@ -125,6 +125,7 @@
 </main>
 <footer>
   <section class="footnotes">
+    <h2 class="removed">Footnotes</h2>
     <ul>
       <li>
         This content uses the <a rel="profile" href="http://microformats.org/profile/hresume">hResume</a>, <a

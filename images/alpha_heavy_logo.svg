@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 400 400"
+   height="400"
+   width="400"
+   version="1.1">
+  <style>
+    .light {
+      fill: #7895a4;
+    }
+    .medium {
+      fill: #335c64;
+    }
+    .dark {
+      fill: #0a3542
+    }
+  </style>
+  <polyline
+     class="dark"
+     points="10,314.3 41.14,362.74 89.58,362.74 58.44,314.3" />
+  <polyline
+     class="dark"
+     points="203.76,85.94 359.46,362.74 148.4,362.74 117.26,314.3 148.4,269.32 176.08,314.3 279.88,314.3 148.4,85.94" />
+  <polyline
+     class="light"
+     points="10,314.3 58.44,314.3 148.4,175.9 99.96,175.9" />
+  <polyline
+     class="light"
+     points="234.9,37.5 179.54,37.5 148.4,85.94 203.76,85.94 " />
+  <polyline
+     class="light"
+     points="279.88,314.3 253.93,269.32 203.76,269.32 176.08,314.3" />
+  <polyline
+     class="medium"
+     points="203.76,85.94 234.9,37.5 390.6,314.3 359.46,362.74 " />
+  <polyline
+     class="medium"
+     points="203.76,269.32 148.4,175.9 58.44,314.3 89.58,362.74 148.4,269.32 176.08,314.3" />
+</svg>

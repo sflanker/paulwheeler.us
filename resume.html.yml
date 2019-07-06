@@ -1,10 +1,12 @@
 title: Paul Wheeler - Résumé
+description: "I am a full stack Senior Software Engineer and Technical Lead. Learn more about how I could be a transformative influence in your organization."
 contact:
   firstName: Paul
   lastName: Wheeler
+  webpage: http://www.paulwheeler.us/
   phone: '(206) 669-6428'
   email: sflanker+resume@hotmail.com
-  emailDisplay: '<img src="./images/email.png" height="16" width="163" />'
+  emailDisplay: '<img src="./images/email.png" height="16" width="163" alt="email address" />'
   address:
     street: 2341 Kaola Way
     city: Honolulu
@@ -108,11 +110,11 @@ experience:
     title: Senior Software Engineer
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2017-09
-    description: "Invio is a early stage startup focused on bringing automation and technological solutions to FDA regulated clinical trial operations. The company's focus is on improving efficiency, reducing costs, decreasing time to market, and ensuring quality. Years before a joined Invio I had the opportunity to work with the founders at a Startup Weekend event on a precursor project that laid the groundwork for what eventually became Invio."
+    description: "Invio is a early stage start-up focused on bringing automation and technological solutions to FDA regulated clinical trial operations. The company's focus is on improving efficiency, reducing costs, decreasing time to market, and ensuring quality. Years before a joined Invio I had the opportunity to work with the founders at a Startup Weekend event on a precursor project that laid the groundwork for what eventually became Invio."
     accomplishments:
-      - Developed front end features including Document Redaction and Annotation UI.
-      - Designed and implemented backend API capabilities.
-      - Created 3rd party API for ingesting medical device data.
+      - Developed web frontend features including interactive document editing UI.
+      - Designed and implemented backend API capabilities and databases.
+      - Created public REST API for importing medical device data.
   - company: Amperity
     companyUrl: https://amperity.com/
     logoUrl: ./images/amperity_logo.svg
@@ -120,7 +122,7 @@ experience:
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2017-01
     endDate: 2017-08
-    description: "Amperity is a fast growing startup that is revolutionizing the way consumer brands manage their data with advanced, big data matching and de-duplication techniques. Amperity was a great place to work and a learned a lot during my time there, however when the opportunity at Invio became available I couldn't pass up the chance to rejoin that team."
+    description: "Amperity is a fast growing start-up that is revolutionizing the way consumer brands manage their data with advanced, big data matching and de-duplication techniques. Amperity was a great place to work and a learned a lot during my time there, however when the opportunity at Invio became available I couldn't pass up the chance to rejoin that team."
     accomplishments:
       - "Lead a team tasked with overhauling Amperity's data ingestion pipeline to improve configurability, reliability, and performance."
       - "Defined data ingestion system architecture, defined and prioritized project backlog,  oversaw and mentored multiple developers."
@@ -130,9 +132,9 @@ experience:
     title: Skipper
     moderateImportance: true
     location: The Pacific Ocean
-    startDate: 2016-03
+    startDate: 2016-02
     endDate: 2016-12
-    description: "After performing another round of upgrades on Serenity, we sailed from California, to the Island of Hawaii, to French Polynesia, to Oahu. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
+    description: "After performing another round of upgrades on Serenity, we sailed from California to the Island of Hawaii, to French Polynesia, to Honolulu, HI. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
   - company: IMS Health (Appature)
     logoUrl: ./images/appature_logo.svg
     title: Senior Software Engineer
@@ -142,14 +144,17 @@ experience:
     description: "Appature was a Marketing Automation and Customer Relationship Management system targeted specifically at the life sciences and pharmaceutical industry. We tackled challenges bringing messy, high volume data sets into a system where quality and predictability were essential."
     accomplishments:
       - "Redesigned internal data access patterns to simplify code, increase encapsulation of data-specific functionality, and decrease coupling to the database layer."
-      - "Built a new version of the Appature Nexus API for loading data. Significantly increase performance."
+      - "Supervised a team of three engineers, provided mentoring and career guidance, managed projects and assignments."
+      - "Built a new version of the Appature Nexus API for loading data. Significantly improved performance and reliability."
       - "Redesigned query engine to increase expressiveness, simplify optimization process, and improve code maintainability."
   - company: Alpha Heavy Industries
+    companyUrl: http://www.alphaheavy.com/
+    logoUrl: ./images/alpha_heavy_logo.svg
     title: Senior Software Engineer
     location: San Francisco, <abbr title="California">CA</abbr>
     startDate: 2011-07
     endDate: 2012-12
-    description: "Alpha Heavy Industries was founded by some of my coworkers at a previous startup, Positronic, to expand upon our application of internet text mining and natural language processing to financial market analysis. We applied advanced genetic programming and solver techniques to identify signal in high frequency financial market data."
+    description: "Alpha Heavy Industries was founded by some of my coworkers at a previous start-up, Positronic, to expand upon our application of internet text mining and natural language processing to financial market analysis. We applied advanced genetic programming and solver techniques to identify signal in high frequency financial market data."
     accomplishments:
       - "Designed and implemented data processing, market simulation, backtesting, and fitness function algorithms for trading strategy evolution."
       - "Designed and ran experiments to improve strategy evolution platforms."
@@ -164,6 +169,7 @@ experience:
     endDate: 2011-07
     description: "Having bought Serenity, a Hans Christian 38 Traditional Cutter, we refitted her and sailed from Berkeley, CA to La Paz, Mexico and back. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
   - company: eBay
+    companyUrl: https://www.ebay.com/
     logoUrl: ./images/ebay_logo.svg
     title: Senior Software Engineer
     location: San Jose, <abbr title="California">CA</abbr>
@@ -180,7 +186,7 @@ experience:
     location: Seattle, <abbr title="Washington">WA</abbr>
     startDate: 2007-11
     endDate: 2008-12
-    description: "Positronic was an early stage startup when I joined it as the fourth member of the team, and second full time engineer. Positronic's mission was to push the limits of what data science and machine learning could be applied to. Our initial target was financial markets and internet text mining."
+    description: "Positronic was an early stage start-up when I joined it as the fourth member of the team, and second full time engineer. Positronic's mission was to push the limits of what data science and machine learning could be applied to. Our initial target was financial markets and internet text mining."
     accomplishments:
       - Architected, designed, and implemented a unique .Net based distributed computing architecture for machine learning jobs.
       - Implemented genetic programming algorithms for evolving trading strategies.
@@ -195,6 +201,7 @@ experience:
     endDate: 2007-11
     description: "After two years at Microsoft a desire to work in a more customer focused environment prompted me to move to Judy's Book, a local business review and deal site. Unfortunately my timing could have been better and Judy's Book ceased operations shortly after I started there (although technically the site is still up under different ownership). On the upside, my short time at Judy's Book got me up to speed on ASP.Net MVC."
   - company: Microsoft
+    companyUrl: https://www.microsoft.com/en-us/
     logoUrl: ./images/microsoft_logo.svg
     title: SDET & SDE
     location: Redmond, <abbr title="Washington">WA</abbr>
@@ -220,4 +227,4 @@ publications:
   - title: Image Dithering as N-Queens Problem
     authors: Paul Wheeler, M. Morse, V. Misic, P. Anderson
     publication: 2004 Proceedings, Conference on Artificial Neural Networks in Engineering
-    description: "By expanding on a basic genetic algorithm for solving the N-Queens problem we were able to devlop a method for generating high quality noise masks that could be used in image dithering producing results superior to traditional algorithms. In order to produce the results for the paper I implemented the expanded genetic algorithm in both Matlab and C++."
+    description: "By expanding on a basic genetic algorithm for solving the N-Queens problem we were able to develop a method for generating high quality noise masks that could be used in image dithering producing results superior to traditional algorithms. In order to produce the results for the paper I implemented the expanded genetic algorithm in both Matlab and C++."
