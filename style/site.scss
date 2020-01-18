@@ -1,9 +1,8 @@
-$heading-font: Menlo, "Lucida Console", monospace;
-$body-font: Georgia, serif;
+/*---
+permalink: style/site.css
+---*/
 
-$dark-color: #24323e;
-$light-color: #f0ede4;
-$medium-gray: #bbbbbb;
+@import './_theme.scss';
 
 body {
   font-family: $body-font;

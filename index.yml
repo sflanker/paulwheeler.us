@@ -36,7 +36,7 @@ navLinks:
     linkText: Home
     linkIcon: home
     current: true
-  - linkUrl: ./resume.html
+  - linkUrl: ./resume/
     linkText: Résumé
     linkIcon: description
   - linkUrl: https://www.linkedin.com/messaging/compose/?recipient=paulwh

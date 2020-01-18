@@ -131,6 +131,12 @@ module.exports = function(eleventyConfig) {
     }
   );
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    delimiters: ['/*---', '---*/']
+  });
+
+  eleventyConfig.setDynamicPermalinks(false);
+
   return {
     templateFormats: [
       "mustache",
