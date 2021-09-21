@@ -3,10 +3,10 @@ description: "I am a full stack Senior Software Engineer and Technical Lead. Lea
 contact:
   firstName: Paul
   lastName: Wheeler
-  webpage: http://www.paulwheeler.us/
+  webpage: https://www.paulwheeler.us/
   phone: '(206) 669-6428'
   email: sflanker+resume@hotmail.com
-  emailDisplay: '<img src="./images/email.png" height="16" width="163" alt="email address" />'
+  emailDisplay: '<img src="/images/email.png" height="16" width="163" alt="email address" />'
   address:
     street: 2341 Kaola Way
     city: Honolulu
@@ -107,7 +107,7 @@ experience:
   - company: Invio
     companyUrl: https://invioinc.com/
     companyPhone: (800) 558-0516
-    logoUrl: ./images/invio_logo.svg
+    logoUrl: /images/invio_logo.svg
     title: Senior Software Engineer
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2017-09
@@ -121,7 +121,7 @@ experience:
   - company: Amperity
     companyUrl: https://amperity.com/
     companyPhone: (206) 432-8302
-    logoUrl: ./images/amperity_logo.svg
+    logoUrl: /images/amperity_logo.svg
     title: Principal Engineer
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2017-01
@@ -134,7 +134,7 @@ experience:
       - "Defined data ingestion system architecture, defined and prioritized project backlog,  oversaw and mentored multiple developers."
   - company: S/V Serenity
     companyUrl: https://www.facebook.com/fetchthehorizon
-    imageUrl: ./images/serenity.jpg
+    imageUrl: /images/serenity.jpg
     title: Skipper
     moderateImportance: true
     location: The Pacific Ocean
@@ -142,7 +142,7 @@ experience:
     endDate: 2016-12
     description: "After performing another round of upgrades on Serenity, we sailed from California to the Island of Hawaii, to French Polynesia, to Honolulu, HI. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
   - company: IMS Health (Appature)
-    logoUrl: ./images/appature_logo.svg
+    logoUrl: /images/appature_logo.svg
     title: Senior Software Engineer
     location: Seattle, <abbr title="Washington">WA</abbr>
     startDate: 2013-02
@@ -157,7 +157,7 @@ experience:
       - "Redesigned query engine to increase expressiveness, simplify optimization process, and improve code maintainability."
   - company: Alpha Heavy Industries
     companyUrl: http://www.alphaheavy.com/
-    logoUrl: ./images/alpha_heavy_logo.svg
+    logoUrl: /images/alpha_heavy_logo.svg
     title: Senior Software Engineer
     location: San Francisco, <abbr title="California">CA</abbr>
     startDate: 2011-07
@@ -171,7 +171,7 @@ experience:
       - "Made improvements to machine learning components."
   - company: S/V Serenity
     companyUrl: https://www.facebook.com/fetchthehorizon
-    imageUrl: ./images/serenity.jpg
+    imageUrl: /images/serenity.jpg
     title: Skipper
     moderateImportance: true
     location: The Pacific Ocean
@@ -180,7 +180,7 @@ experience:
     description: "Having bought Serenity, a Hans Christian 38 Traditional Cutter, we refitted her and sailed from Berkeley, CA to La Paz, Mexico and back. Responsibilities included navigation, seamanship, maintenance, and first and foremost, ensuring the safety of myself, my wife, and my crew."
   - company: eBay
     companyUrl: https://www.ebay.com/
-    logoUrl: ./images/ebay_logo.svg
+    logoUrl: /images/ebay_logo.svg
     title: Senior Software Engineer
     location: San Jose, <abbr title="California">CA</abbr>
     startDate: 2009-01
@@ -193,7 +193,7 @@ experience:
       - Created Hadoop jobs to processes click logs to generate a data set for machine learning.
       - Was influential in the creation of a Hadoop installation that became an integral part of eBay’s infrastructure.
   - company: Positronic
-    logoUrl: ./images/positronic_logo.svg
+    logoUrl: /images/positronic_logo.svg
     title: Software Engineer
     location: Seattle, <abbr title="Washington">WA</abbr>
     startDate: 2007-11
@@ -206,7 +206,7 @@ experience:
       - Implemented genetic programming algorithms for evolving trading strategies.
       - Designed and implemented a high performance market simulator and backtester.
   - company: Judy's Book
-    logoUrl: ./images/judys_book_logo.svg
+    logoUrl: /images/judys_book_logo.svg
     companyUrl: https://www.judysbook.com/
     lowImportance: true
     title: SDE
@@ -216,7 +216,7 @@ experience:
     description: "After two years at Microsoft a desire to work in a more customer focused environment prompted me to move to Judy's Book, a local business review and deal site. Unfortunately my timing could have been better and Judy's Book ceased operations shortly after I started there (although technically the site is still up under different ownership). On the upside, my short time at Judy's Book got me up to speed on ASP.Net MVC."
   - company: Microsoft
     companyUrl: https://www.microsoft.com/en-us/
-    logoUrl: ./images/microsoft_logo.svg
+    logoUrl: /images/microsoft_logo.svg
     title: SDET & SDE
     location: Redmond, <abbr title="Washington">WA</abbr>
     startDate: 2005-09
@@ -232,7 +232,7 @@ experience:
       - Trained peers on best practices of API and Web Service design.
   - company: { text: United States Department of Agriculture, abbreviation: USDA }
     companyUrl: https://www.ams.usda.gov/
-    logoUrl: ./images/USDA_logo.svg
+    logoUrl: /images/USDA_logo.svg
     lowImportance: true
     title: Software Developer/Intern
     location: Washington, <abbr title="District of Columbia">DC</abbr>

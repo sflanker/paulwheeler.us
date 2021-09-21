@@ -1,0 +1,49 @@
+socialLinks:
+  - linkUrl: https://github.com/sflanker
+    linkTitle: 'GitHub'
+    linkId: github_link
+    logoUrl: /images/GitHub.svg
+    logoViewBox: 0 0 160 156
+    hoverColor: white
+  - linkUrl: https://www.linkedin.com/in/paulwh/
+    linkTitle: LinkedIn
+    linkId: linkedin_link
+    logoUrl: /images/LinkedIn.svg
+    logoViewBox: 0 0 76 76
+    hoverColor: '#0a65c2'
+  - linkUrl: https://stackoverflow.com/users/229247/paul-wheeler?tab=profile
+    linkTitle: StackOverflow
+    linkId: stackoverflow_link
+    logoUrl: /images/StackOverflow.svg
+    logoViewBox: 0 0 73 86
+    hoverColor: '#f48023'
+  - linkUrl: https://www.facebook.com/sflanker
+    linkTitle: Facebook
+    linkId: facebook_link
+    logoUrl: /images/Facebook.svg
+    logoViewBox: 0 0 100 100
+    hoverColor: '#1877f2'
+  - linkUrl: https://www.strava.com/athletes/23811097
+    linkTitle: Strava
+    linkId: strava_link
+    logoUrl: /images/Strava.svg
+    logoViewBox: 0 0 65 90
+    hoverColor: '#fc4c02'
+navLinks:
+  - pageName: home
+    linkUrl: /
+    linkText: Home
+    linkIcon: home
+  - pageName: articles
+    linkUrl: /articles/
+    linkText: Articles
+    linkIcon: auto_stories
+  - pageName: resume
+    linkUrl: /resume/
+    linkText: Résumé
+    linkIcon: contact_page
+  - pageName: contact
+    linkUrl: https://www.linkedin.com/messaging/compose/?recipient=paulwh
+    linkText: Contact
+    linkTitle: via LinkedIn
+    linkIcon: email

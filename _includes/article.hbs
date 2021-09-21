@@ -1,0 +1,15 @@
+/*---
+layout: with-navbar.hbs
+name: articles
+title: Articles
+head: |
+  <link href="/style/articles.css" rel="stylesheet" />
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-coy.css" rel="stylesheet">
+---*/
+<main class="article">
+  <h1>{{subtitle}}</h1>
+  <p class="description">
+    {{description}}
+  </p>
+  {{{content}}}
+</main>

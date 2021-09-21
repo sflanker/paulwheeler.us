@@ -1,0 +1,36 @@
+/*---
+layout: master.hbs
+layout_head: |
+  <link href="/style/navigation.css" rel="stylesheet" />
+---*/
+<div id="header_bar" style="display: none;">
+  <input id="show_nav" type="checkbox" />
+  <label for="show_nav"><i class="material-icons"></i></label>
+  <header>
+    <div id="avatar_title">
+      <h1>
+        <img src="/images/avatar.jpg" alt="Avatar" width="140" height="140" />
+        {{title}}
+      </h1>
+    </div>
+  </header>
+  <nav>
+    <div id="nav_links">
+      {{#each navigation.navLinks}}
+        <a href="{{& linkUrl}}" {{#if linkTitle}}title="{{linkTitle}}"{{/if}} {{#if-equal ../name pageName}}class="current"{{/if-equal}}>
+          <i class="material-icons">{{linkIcon}}</i><span>{{linkText}}</span>
+        </a>
+      {{/each}}
+    </div>
+    <div id="social_links">
+      {{#each navigation.socialLinks}}
+        <a id="{{linkId}}" href="{{& linkUrl}}" title="{{linkTitle}}">
+          <svg class="logo" viewBox="{{logoViewBox}}" width="40" height="40" style="color: {{hoverColor}}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="{{& logoUrl}}#logo"></use>
+          </svg>
+        </a>
+      {{/each}}
+    </div>
+  </nav>
+</div>
+{{{content}}}

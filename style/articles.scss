@@ -1,0 +1,14 @@
+/*---
+permalink: style/articles.css
+---*/
+
+@import './_theme.scss';
+
+body {
+  background-color: $light-color;
+}
+
+main {
+  padding: 2em;
+  color: $dark-color;
+}

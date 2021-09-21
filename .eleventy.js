@@ -1,5 +1,6 @@
 const moment = require('moment');
 const handlebars = require('handlebars');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
@@ -34,6 +35,19 @@ module.exports = function(eleventyConfig) {
       let value = conditions.filter(v => v)[0];
       if (value) {
         return options.fn({ ...this, value });
+      } else if (options.inverse) {
+        return options.inverse();
+      }
+    }
+  );
+
+  eleventyConfig.addHandlebarsHelper(
+    "if-equal",
+    function () {
+      let values = Array.from(arguments).slice(0, -1);
+      let options = arguments[arguments.length - 1];
+      if (values[0] === values[1]) {
+        return options.fn(this);
       } else if (options.inverse) {
         return options.inverse();
       }
@@ -123,6 +137,13 @@ module.exports = function(eleventyConfig) {
   );
 
   eleventyConfig.addHandlebarsHelper(
+    "$toString",
+    function (value) {
+      return value && value.toString();
+    }
+  );
+
+  eleventyConfig.addHandlebarsHelper(
     "$log",
     function (value) {
       console.log((typeof value) + (value && value.prototype ? ': ' + value.prototype.constructor.name : ''));
@@ -137,11 +158,13 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setDynamicPermalinks(false);
 
+  eleventyConfig.addPlugin(syntaxHighlight);
+
   return {
     templateFormats: [
-      "mustache",
       "hbs",
-      "scss"
+      "scss",
+      "md"
     ],
     passthroughFileCopy: true
   };

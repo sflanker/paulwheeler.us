@@ -1,0 +1,22 @@
+/*---
+layout: with-navbar.hbs
+title: Articles
+name: articles
+description: Long form articles/guides/posts/papers that that I've written.
+head: |
+  <link href="/style/articles.css" rel="stylesheet" />
+---*/
+
+<main>
+  <section class="article-list">
+    {{#each collections.articles}}
+      <a href="{{& $toString url}}">
+      <div class="synopsis">
+        <h2>{{data.subtitle}}</h2>
+        <p class="published">{{ $formatDate date "YYYY-MM-DD" }}</p>
+        <p class="description">{{data.description}}</p>
+      </div>
+      </a>
+    {{/each}}
+  </section>
+</main>
