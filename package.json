@@ -25,7 +25,7 @@
   },
   "homepage": "http://www.paulwheeler.us/",
   "dependencies": {
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "moment": "^2.24.0"
   },
   "devDependencies": {
