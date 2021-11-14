@@ -113,7 +113,7 @@ Lastly in order for p5.js to cache and reuse the generated WebGL datastructures 
 
 Putting that all together we can see our 3D triangle!
 
-<iframe src="https://editor.p5js.org/Kumu-Paul/full/_L9RplFUS" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://openprocessing.org/sketch/1353093/embed/?plusEmbedHash=NGE2YjdkZDJkZGNhZThhMjM1NTBjY2Q2ZDg5YTBkMDcwMTBkMzRhZjc3NDhkNTI0NGI4ZDM0MzY3ZTFiNGU5YjE0OTNmYjZjZjBjMDFkZjVlYTkyNzU0MzllODAyMzU2YmYxZTNlNzBiOTRhYjRkOTQ1N2ViMDY5ZjliMzgwZWNGZFlhNUx3Zk9VcXpSQ3ExeER4L0tJZXBlWGVkS003TU9iVjRoQWVTa1hIa0oxb0wvWmU5d2ZybHlJT1BNLzVSQ2RRb0xtU1puL1B3d2tsaGVQeDVnQT09" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 However, this triangle will not be illuminated correctly if there is a light shining on it. This is because it does not have any vertex normals. A vertex normal is a vector that points in a direction approximately perpendicular to the triangle's surface. For smooth shapes the normal for a given vertex is usually the average of all the normals for triangles touching that point. When calculating the amount of illumination for each point on each triangle the GPU interpolates the normals from one corner of the triangle to the other, resulting in a smooth transition. Alternately, for hard edged shapes it can be preferable to use separate vertices for each triangle so that each vertex can have a normal that matches only one triangle. Thus, each triangle will be uniformly illuminated.
 
@@ -161,7 +161,7 @@ function draw() {
 // ...
 ```
 
-<iframe src="https://editor.p5js.org/Kumu-Paul/full/H63Vu0R-U" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://openprocessing.org/sketch/1353094/embed/?plusEmbedHash=Yjc0NjMwN2YxNTQxM2Y0OGI0NDNkNTMxOGNlZjgyMTYxOGNjMWFlYzAzNzczM2IxYTc3Y2QzOGYwMjQyMGExODc1NjJjMmY2NjZmODZmNmMzNTI4MTRlNWJjMDBmNDJiN2I5OTBjYjk2M2Q3ODc1ZDA3YzBjYzcyMWIwMTJkOTdOaWp4SG5wM2JUYjJxc0UzQjdSL3gzczNFM1FkeGNPMDZlUDBLbC9hYUlHVE11aitCNkZ5eVBmd3ZEZG5qNHFhRUNPaS9WNUNRMElQd2VpWExSdWR2QT09" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 Conveniently, `p5.Geometry` actually has a built-in function that takes care of computing normals, including averaging normals from multiple faces sharing a single vertex. So we can simplify this code quite a bit:
 
@@ -207,7 +207,7 @@ function draw() {
 }
 ```
 
-<iframe src="https://editor.p5js.org/Kumu-Paul/full/OMaLNd2mx" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://openprocessing.org/sketch/1353097/embed/?plusEmbedHash=ZGU5MTg2ZDQyY2QwYTU3NmYwYWU4MDQxNjc2NmFmMGM0NWMxNTU2YTA2NGM5ZjI0NGViNjdlZTliODJkNjUzNDQ1YzczOWRlNmRlZDkzMzA4OGVjOTRjOGRlMmQyMjVhM2ZjNzAxMjJiNzQ0Yjg5Nzk4NDc4NWM1MTYxM2VhM2RjQjBkZXloU1BpZTM3TkR4QnNUdVk2bWFBeGkwcWFKN204am91RFJWYmRXYkYvVDEySzJZclZBWmZMSHE2VkRQTmovK0VZbmROWStTaFNDTnA0Rk10QT09" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 ### Procedural Geometry Example
 
@@ -286,7 +286,7 @@ function createMobius(radius = 40, stripWidth = 20, detailX = 48, detailY = 2) {
 
 Note how the `gid` value in this case incorporates all the parameters that determine the precise set of vertices. This is so that multiple Möbius strips can be created with different parameters and each one will have its own set of cached geometry data. However, if two Möbius strips with exactly the same parameters are created, or the same strip is drawn repeatedly, there will be no need to regenerate the WebGL data structures. This is take care of behind the scenes by the `model()` function.
 
-<iframe src="https://editor.p5js.org/Kumu-Paul/full/AnHr8yL2a" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://openprocessing.org/sketch/1353108/embed/?plusEmbedHash=Mzc4YTliNGUyMTgxMzkzZjk2YWUyZmQ1MjhkYjFmMjUxNjNhMTQzNjllZDI5OGY2NmFkOTgwOWExYWNkY2M4M2Q0ZDZmOGZjMjZlMjNkNjNjNjM0MGY3NTQ4YmQwMzMyMmQxMzEwZTMyZGNmYmY2MjYyNDkyMTkxNWUxNzgxMGNkRDFzQUwyTmpLUVFPYlo1VVZTSWxodGVNbEpDMUI0UndIQ1VXL1pISkpxZjlRSEhNVmhveEtJcDRHRzdPNk1TMWswT29mLzgvL3lMcDQxNDhrMy9MUT09" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
 
 ## Conclusion
 
@@ -294,4 +294,10 @@ There are numerous scenarios where creating custom `p5.Geometry` might be useful
 
 A hui hou 🤙
 
-<iframe src="https://editor.p5js.org/Kumu-Paul/full/W3YM4J-eW" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://openprocessing.org/sketch/1353109/embed/?plusEmbedHash=MjIzYjEwYjM4YzExOGJlNTJjYjEwNjQzYWEyY2RiMWU4NjUwOWZjODMwZGE5YzEwNzg5OGYyYzQ2MDVkZWIxZTQ4NTQzMTU5YzBlM2JkMDY4YmFkYWUyYjIzZjAyMzAxODdmMGVjMzI0NjE4YmMzZjc1NzNlZDhjNTNlNTA0MzFGYUZDc3p3NmNpUnZicDNIaTg4T0VNcWpObVgrcHB6Y2F0N3VycGdhMlFnWk5ULzE4ZEt1bjdjZEhMN1pGRXlEWmo5dHBlT1lJUWtROHRPK0tWZFpIQT09" width="100%" height="442" allowfullscreen frameborder="0" marginwidth="0" marginheight="0"></iframe>
+
+---
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work and all the embedded p5.js sketches are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
