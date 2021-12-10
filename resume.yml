@@ -5,8 +5,8 @@ contact:
   lastName: Wheeler
   webpage: https://www.paulwheeler.us/
   phone: '(206) 669-6428'
-  email: sflanker+resume@hotmail.com
-  emailDisplay: '<img src="/images/email.png" height="16" width="163" alt="email address" />'
+  email: resume@paulwheeler.us
+  emailDisplay: '<img src="/images/email.png" height="16" width="190" alt="email address" />'
   address:
     street: 2341 Kaola Way
     city: Honolulu
@@ -72,7 +72,7 @@ skills:
       details: (GKE/KNative)
     Web Design:
       url: https://en.wikipedia.org/wiki/Web_design
-      rank: 5
+      rank: 4
       details: (HTML/CSS/SVG/Canvas)
     Docker:
       url: https://en.wikipedia.org/wiki/Docker_(software)
@@ -81,10 +81,6 @@ skills:
       url: https://en.wikipedia.org/wiki/Language_Integrated_Query
       rank: 4
       details: (Language Integrated Query)
-    XML:
-      url: https://en.wikipedia.org/wiki/XML
-      rank: 4
-      details: (XPATH/XSLT/XSD/SOAP)
     Continuous Integration:
       url: https://en.wikipedia.org/wiki/Continuous_integration
       rank: 3
@@ -93,17 +89,31 @@ skills:
       url: https://en.wikipedia.org/wiki/Distributed_computing
       rank: 4
       details: (Hadoop/Spark/Pub-Sub)
+    AngularJS:
+      url: https://angular.io/
+      rank: 4
     ReactJS:
-      url: https://en.wikipedia.org/wiki/React_(JavaScript_library)
-      rank: 1
+      url: https://reactjs.org/
+      rank: 3
     Web Services:
       url: https://en.wikipedia.org/wiki/Web_service
       rank: 5
       details: (REST/SOAP/WCF)
+    XML:
+      url: https://en.wikipedia.org/wiki/XML
+      rank: 4
+      details: (XPATH/XSLT/XSD/SOAP)
     SCRUM/Agile:
       url: https://en.wikipedia.org/wiki/Agile_software_development
-      rank: 1
+      rank: 2
 experience:
+  - company: SourceDrive Consortium
+    companyUrl: https://www.sourcedrive.org/
+    logoUrl: /images/invio_logo.svg
+    title: Principal Software Engineer
+    location: Honolulu, <abbr title="Hawaii">HI</abbr>
+    startDate: 2020-07
+    description: "As Invio wound down in 2020, SourceDrive transitioned to operation as an independent consortium under the management of the Cedars-Sinai Health System. As the principal engineer developing, maintaining, and operating SourceDrive I have had the opportunity to maximize my breadth in design, architecture, cloud operations, customer support, and project management."
   - company: Invio
     companyUrl: https://invioinc.com/
     companyPhone: (800) 558-0516
@@ -111,6 +121,7 @@ experience:
     title: Senior Software Engineer
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2017-09
+    endDate: 2020-07
     supervisor: Brian Caruso
     supervisorTitle: CTO
     description: "Invio is a early stage start-up focused on bringing automation and technological solutions to FDA regulated clinical trial operations. The company's focus is on improving efficiency, reducing costs, decreasing time to market, and ensuring quality. Years before a joined Invio I had the opportunity to work with the founders at a Startup Weekend event on a precursor project that laid the groundwork for what eventually became Invio."
