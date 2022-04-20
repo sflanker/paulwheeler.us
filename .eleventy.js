@@ -1,8 +1,12 @@
+const path = require("path");
+
 const moment = require('moment');
 const handlebars = require('handlebars');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const yaml = require("js-yaml");
+const sass = require("sass");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
 
   eleventyConfig.addHandlebarsHelper(
@@ -34,7 +38,7 @@ module.exports = function(eleventyConfig) {
       let options = arguments[arguments.length - 1];
       let value = conditions.filter(v => v)[0];
       if (value) {
-        return options.fn({ ...this, value });
+        return options.fn({...this, value});
       } else if (options.inverse) {
         return options.inverse();
       }
@@ -160,12 +164,28 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  return {
-    templateFormats: [
-      "hbs",
-      "scss",
-      "md"
-    ],
-    passthroughFileCopy: true
-  };
+  eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+
+  eleventyConfig.addTemplateFormats("scss");
+
+  // Creates the extension for use
+  eleventyConfig.addExtension("scss", {
+    outputFileExtension: "css", // optional, default: "html"
+
+    // `compile` is called once per .scss file in the input directory
+    compile: function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath);
+
+      let result = sass.compileString(inputContent, {
+        loadPaths: [
+          parsed.dir || ".",
+          this.config.dir.includes
+        ]
+      });
+
+      return (data) => {
+        return result.css;
+      };
+    }
+  });
 };

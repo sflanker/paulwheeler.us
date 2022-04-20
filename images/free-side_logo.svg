@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="192.00002"
+   inkscape:export-xdpi="192.00002"
+   inkscape:export-filename="/Users/paul/Documents/Free-Side Software/Free-Side Logo.png"
+   sodipodi:docname="Free-Side Logo.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 128 128"
+   height="128"
+   width="128">
+  <defs
+     id="defs2">
+    <rect
+       id="rect859"
+       height="100"
+       width="116"
+       y="-28"
+       x="-4" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="77"
+     inkscape:window-x="1877"
+     inkscape:window-height="952"
+     inkscape:window-width="1650"
+     inkscape:snap-global="false"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="72.359212"
+     inkscape:cx="137.57327"
+     inkscape:zoom="2.8"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       empspacing="8"
+       spacingy="4"
+       spacingx="4"
+       id="grid833"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       d="M 20,118 V 54 h 40 v 7.133333 H 35.984991 v 21.333333 h 16.060038 v 7.066666 H 35.984991 V 118 Z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;line-height:1.25;font-family:Krungthep;-inkscape-font-specification:Krungthep;writing-mode:lr-tb;white-space:pre;fill:#737373;fill-opacity:1;stroke-width:1.61675"
+       id="path865" />
+    <path
+       d="m 114,68.199998 h -7.95498 q -1.05065,-7.133332 -7.57973,-7.133332 -4.202626,0 -6.341464,1.8 -2.138836,1.8 -2.138836,5.366665 0,2.666667 2.363978,5 L 109.30957,90.166663 Q 114,94.83333 114,100.2 v 3.6 q 0,5.76666 -4.69043,10 -4.69044,4.2 -11.294562,4.2 H 89.98499 Q 82.030018,118 78.015009,114.43333 74,110.86666 74,103.8 h 8.030018 q -0.07505,0.73333 -0.07505,1.16666 0,2.9 2.514071,4.4 2.514071,1.5 5.515947,1.5 4.277674,0 6.153846,-1.83333 1.876172,-1.83333 1.876172,-5.33333 0,-2.7 -2.363977,-5.000003 L 78.690432,81.833331 Q 74,77.199998 74,71.799998 v -3.6 Q 74,62.4 78.690432,58.2 83.380862,54 89.98499,54 h 8.030018 Q 113.02439,54 114,68.199998 Z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;line-height:1.25;font-family:Krungthep;-inkscape-font-specification:Krungthep;writing-mode:lr-tb;white-space:pre;fill:#737373;fill-opacity:1;stroke-width:1.61675"
+       id="path867" />
+    <path
+       d="M 63.999022,24 A 56.002928,56.29451 0 0 0 8,79.770283 56.002928,44.231401 0 0 1 63.999022,36.063109 56.002928,44.231401 0 0 1 120,80 56.002928,56.29451 0 0 0 63.999022,24 Z"
+       style="fill:#000000;stroke-width:3.00796;stroke-linecap:round;stroke-linejoin:round"
+       id="path835" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       d="M 64,16 C 50.727382,16.163425 40.000262,44.769076 40,80 l 4.018641,-4 4.101055,4 C 48.119476,58.271333 50.874051,38.026302 55.434878,26.236328 57.988764,19.63565 60.959872,16.084826 64,16 Z"
+       style="fill:#00d200;fill-opacity:1;stroke-width:3.00703;stroke-linecap:round;stroke-linejoin:round"
+       id="path842" />
+    <text
+       id="text855"
+       y="23.21069"
+       x="59.788071"
+       style="font-size:40px;line-height:1.25;font-family:sans-serif;writing-mode:lr-tb;fill:#00d200;fill-opacity:1"
+       xml:space="preserve"><tspan
+         rotate="0 0"
+         dy="0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';writing-mode:lr-tb;text-orientation:sideways;fill:#00d200;fill-opacity:1"
+         y="23.21069"
+         x="59.788071"
+         id="tspan853"
+         sodipodi:role="line">*</tspan></text>
+  </g>
+</svg>

@@ -107,12 +107,18 @@ skills:
       url: https://en.wikipedia.org/wiki/Agile_software_development
       rank: 2
 experience:
-  - company: SourceDrive Consortium
-    companyUrl: https://www.sourcedrive.org/
-    logoUrl: /images/invio_logo.svg
+  - company: RevaComm
+    companyUrl: https://www.revacomm.com/
+    logoUrl: /images/revacomm_logo.svg
+    title: Software Engineer Lead
+    location: Honolulu, <abbr title="Hawaii">HI</abbr>
+    startDate: 2022-04-19
+  - company: Free-Side Software LLC
+    logoUrl: /images/free-side_logo.svg
     title: Principal Software Engineer
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2020-07
+    endDate: 2022-04
     description: "As Invio wound down in 2020, SourceDrive transitioned to operation as an independent consortium under the management of the Cedars-Sinai Health System. As the principal engineer developing, maintaining, and operating SourceDrive I have had the opportunity to maximize my breadth in design, architecture, cloud operations, customer support, and project management."
   - company: Invio
     companyUrl: https://invioinc.com/

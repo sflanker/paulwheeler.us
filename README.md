@@ -2,7 +2,7 @@
 
 ## About
 
-This is the source code for my personal website, which is just a landing page with a little bit of information about myself. This site is static content hosted in a google cloud bucket. The site is generated using a modified version of [Eleventy](https://github.com/sflanker/eleventy) from [Handlebars](https://handlebarsjs.com/) templates with [YAML](https://yaml.org/) files and [Sass](https://sass-lang.com/) style sheets. In an effort to avoid bloat my goal was to use as little javascript as possible, and this page has a single inline event handler to make the page's scroll position accessible to css rules.
+This is the source code for my personal website, which is just a landing page with a bit of information about myself. This site is static content hosted in a google cloud bucket. The site is generated using a modified version of [Eleventy](https://github.com/sflanker/eleventy) from [Handlebars](https://handlebarsjs.com/) templates with [YAML](https://yaml.org/) files and [Sass](https://sass-lang.com/) style sheets. In an effort to avoid bloat my goal was to use as little JavaScript as possible, and this page has a single inline event handler to make the page's scroll position accessible to css rules.
 
 ### Applying CSS Styles Based on Scroll
 
@@ -24,7 +24,7 @@ html:not([data-scroll='0']) #header_bar #avatar_title img {
 }
 ```
 
-Because CSS does not have less-than or greater-than operators if you want to use a threshold besides `0`/`1+`, it is neccessary to add some computation to the event handler, in my case I chose `63`/`64+` as the threshold and so I used the following javascript in my event handler:
+Because CSS does not have less-than or greater-than operators if you want to use a threshold besides `0`/`1+`, it is necessary to add some computation to the event handler, in my case I chose `63`/`64+` as the threshold, and so I used the following javascript in my event handler:
 
 ```javascript
 document.documentElement.dataset.scroll = (window.scrollY >> 6).toString()
@@ -32,9 +32,9 @@ document.documentElement.dataset.scroll = (window.scrollY >> 6).toString()
 
 ### Changing SVG Color With CSS
 
-For the social media links on the page I wanted to use a single, external SVG for each logo. However I also wanted have the logos' brand color appear when the user moused over them.
+For the social media links on the page I wanted to use a single, external SVG for each logo. However, I also wanted to have the logos' brand color appear when the user moused over them.
 
-When SVG content is directly inlined into a webpage it is possible to style its elements using CSS. However when an external SVG is embedded with an `<img />` tag this is not possible. However, this is a workaround so long as you only need to change a single color:
+When SVG content is directly inlined into a webpage it is possible to style its elements using CSS, but  when an external SVG is embedded with an `<img />` tag this is not possible. However, this is a workaround so long as you only need to change a single color:
 
 #### Step 1. Modify Your SVG
 
@@ -47,7 +47,7 @@ You must modify the SVG elements you wish to style with CSS so that the color yo
     <circle id="logo" cx="50" cy="50" r="40" fill="currentColor" />
   </defs>
   <g style="color: red">
-    <!-- The embeded element inherits the color from its parent anywhere
+    <!-- The embedded element inherits the color from its parent anywhere
          currentColor is used -->
     <use xlink:href="#logo" x="0" y="0" />
   </g>
@@ -101,7 +101,7 @@ Using a conditional CSS selector and the general sibling combinator it is possib
 </html>
 ```
 
-It is possible to change the font size of the "adjustable" paragraph with the followign CSS:
+It is possible to change the font size of the "adjustable" paragraph with the following CSS:
 
 ```css
 input[value='0'] ~ p.adjustable { font-size: 8pt; }
@@ -117,8 +117,8 @@ However, HTML input elements don't actually update their `value` attributes when
        onmousemove="this.setAttribute('value', this.value)" />
 ```
 
-In the case of my resume I used this detail slider to show and hide less significant details about my experience, skills, an education. On narrow screen sizes the slider disappears and the level of deailed is locked in at zero.
+In the case of my resume I used this detail slider to show and hide less significant details about my experience, skills, an education. On narrow screen sizes the slider disappears and the level of detail is locked in at zero.
 
 ### Microformats
 
-Microformats make it possible to combine structured data with a view designed for human readability. Specially defined CSS classes are used to denote the the elements and attributes that contain specific pieces of data. In theory this would allow a compatible extractor to quickly and reliably parse the critical elements of the resume into a structured database.
+Microformats make it possible to combine structured data with a view designed for human readability. Specially defined CSS classes are used to denote the elements and attributes that contain specific pieces of data. In theory this would allow a compatible extractor to quickly and reliably parse the critical elements of the resume into a structured database.
