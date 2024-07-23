@@ -222,18 +222,19 @@ input#lod_slider:hover {
     flex-wrap: wrap;
 
     li.area {
-      &.languages_skills {
-        width: calc(40% - 20px);
-      }
-      &.general_skills {
-        width: calc(60% - 20px);
-      }
-
       text-align: center;
       font-size: 18pt;
       font-weight: bold;
       color: $medium-gray;
       margin-left: 40px;
+
+      &.languages_skills {
+        width: calc(40% - 20px);
+      }
+
+      &.general_skills {
+        width: calc(60% - 20px);
+      }
 
       &:first-child {
         margin-left: 0;
@@ -318,7 +319,6 @@ input#lod_slider:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 0.2em 0 0;
-
   }
 
   h5 {
