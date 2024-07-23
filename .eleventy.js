@@ -58,6 +58,24 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  const operators = {
+    not: v => !v,
+    eq: (v1, v2) => v1 === v2,
+    ne: (v1, v2) => v1 !== v2,
+    lt: (v1, v2) => v1 < v2,
+    gt: (v1, v2) => v1 > v2,
+    lte: (v1, v2) => v1 <= v2,
+    gte: (v1, v2) => v1 >= v2,
+    and: (...args) => args.every(x => x),
+    or: (...args) => args.some(x => x)
+  };
+
+  for (const k in operators) {
+    if (operators.hasOwnProperty(k)) {
+      eleventyConfig.addHandlebarsHelper(k, operators[k]);
+    }
+  }
+
   eleventyConfig.addHandlebarsHelper(
     "$coalesce",
     function () {

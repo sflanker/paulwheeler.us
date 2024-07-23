@@ -91,7 +91,7 @@ head: |
             </li>
           </ul>
           <div class="description">
-            <p class="expository {{#if accomplishments}}lod2{{/if}}">{{{description}}}</p>
+            <p class="expository {{#if (and accomplishments (not fullDetail))}}lod2{{/if}}">{{{description}}}</p>
             {{#if accomplishments}}
               <div class="accomplishments">
                 <h5>Accomplishments</h5>

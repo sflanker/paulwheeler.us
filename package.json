@@ -4,9 +4,8 @@
   "description": "My personal website",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy",
-    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
     "deploy": "gsutil -m rsync -r -x '.DS_Store' ./_site/ gs://www.paulwheeler.us/"
   },
   "repository": {
