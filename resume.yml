@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=none
 title: Paul Wheeler - Résumé
 description: "I am a full stack Software Architect and Technical Lead. Learn more about how I could be a transformative influence in your organization."
 contact:
@@ -83,29 +84,33 @@ skills:
       url: https://en.wikipedia.org/wiki/Language_Integrated_Query
       rank: 3
       details: (Language Integrated Query)
-    Continuous Integration:
+    CI/CD:
       url: https://en.wikipedia.org/wiki/Continuous_integration
       rank: 5
-      details: (Testing/Continuous Deployment)
+      details: (Continuous Integration/Continuous Deployment)
     Terraform:
       url: https://en.wikipedia.org/wiki/Terraform_(software)
       rank: 4
       details: Infrastructure as Code
-    Distributed Computing:
+    "Distributed Computing":
       url: https://en.wikipedia.org/wiki/Distributed_computing
       rank: 4
       details: (Hadoop/Spark/Pub-Sub)
+    "Langchain JS":
+      url: https://js.langchain.com/
+      rank: 4
+      details: (OpenAI/Ollama/RAG)
     AngularJS:
       url: https://angular.io/
       rank: 3
-    Web Design:
+    "Web Design":
       url: https://en.wikipedia.org/wiki/Web_design
       rank: 4
       details: (HTML/CSS/SVG/Canvas)
     ReactJS:
       url: https://reactjs.org/
       rank: 3
-    Web Services:
+    "Web Services":
       url: https://en.wikipedia.org/wiki/Web_service
       rank: 5
       details: (REST/SOAP/WCF)
@@ -117,16 +122,18 @@ skills:
       url: https://en.wikipedia.org/wiki/Agile_software_development
       rank: 2
 experience:
-  - company: IntelliBridge
-    companyUrl: https://intellibridge.us/
-    logoUrl: /images/intellibridge_logo.svg
-    title: Software Architect
+  - company: Agile Defense
+    companyUrl: https://agiledefense.com/
+    logoUrl: /images/agile_defense_logo.svg
+    title: Sr. Software Engineer / Tech Lead
     location: Honolulu, <abbr title="Hawaii">HI</abbr>
     startDate: 2022-04-19
     fullDetail: true
     description: |
-      At IntelliBridge (previously RVCM) I have taken on multiple roles— including Cloud Infrastructure Engineer, Lead Software Engineer, and Software Architect— through which I have made a significant impact on a continuous integration and delivery platform as a service, used by multiple independent application development teams.
+      At Agile Defense (previously IntelliBridge and before that Revacomm) I have taken on multiple roles— including Cloud Infrastructure Engineer, Lead Software Engineer, and Software Architect— through which I have made a significant impact on a continuous integration and delivery platform as a service, used by multiple independent application development teams.
     accomplishments:
+      - Developed features for a Langchain JS based AI Agent, workflow automation, & recall augmented generation application.
+      - Implemented a Infrastructure as Code and Configuration as Code automated solution for rapidly deploying a complex microservice application including self hosted LLM execution on GPUs.
       - Implemented logging and monitoring capabilities in an Amazon EKS cluster using a combination of Terraform and Helm Charts, making extensive use of Fluent Bit and Grafana.
       - Designed, and led a team in implementing, custom software for Kubernetes to monitor multiple services and applications across multiple Kubernetes clusters using HTTP request, as well as log stream and metrics based rules.
       - Architected and co-led an initiative to deliver a standardized security solution for continuous delivery without coupling to a specific CI/CD hosting solution (i.e. portable across GitLab CI, GitHub Actions, Jenkins, etc.).
