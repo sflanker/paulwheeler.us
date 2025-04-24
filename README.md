@@ -1,3 +1,9 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+
 # [PaulWheeler.us](http://www.paulwheeler.us/)
 
 ## About
@@ -122,3 +128,6 @@ In the case of my resume I used this detail slider to show and hide less signifi
 ### Microformats
 
 Microformats make it possible to combine structured data with a view designed for human readability. Specially defined CSS classes are used to denote the elements and attributes that contain specific pieces of data. In theory this would allow a compatible extractor to quickly and reliably parse the critical elements of the resume into a structured database.
+
+</body>
+</html>
